@@ -1,0 +1,436 @@
+<!--
+/*********************************************************************************
+ * The contents of this file are subject to the SugarCRM Public License Version
+ * 1.1.3 ("License"); You may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.sugarcrm.com/SPL
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied.  See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * All copies of the Covered Code must include on each user interface screen:
+ *    (i) the "Powered by SugarCRM" logo and
+ *    (ii) the SugarCRM copyright notice
+ * in the same form as they appear in the distribution.  See full license for
+ * requirements.
+ *
+ * The Original Code is: SugarCRM Open Source
+ * The Initial Developer of the Original Code is SugarCRM, Inc.
+ * Portions created by SugarCRM are Copyright (C) 2004-2006 SugarCRM, Inc.;
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________.
+ ********************************************************************************/
+/*********************************************************************************
+
+ ********************************************************************************/
+-->
+
+<!-- BEGIN: Quote_Subject -->
+Devis [1CRM] - {QUOTE_SUBJECT}
+<!-- END: Quote_Subject -->
+<!-- BEGIN: Quote -->
+{ASSIGNER} a assigné un devis à {ASSIGNED_USER}.
+
+Objet: {QUOTE_SUBJECT}
+Etat: {QUOTE_STATUS}
+Date de Clôture: {QUOTE_CLOSEDATE}
+Description: {QUOTE_DESCRIPTION}
+
+Vous pouvez consulter ce devis à l'URL suivante:
+{URL}
+<!-- END: Quote -->
+
+
+<!-- BEGIN: Account_Subject -->
+Compte [1CRM] - {ACCOUNT_NAME}
+<!-- END: Account_Subject -->
+<!-- BEGIN: Account -->
+{ASSIGNER} a assigné un compte à {ASSIGNED_USER}.
+
+Nom du compte: {ACCOUNT_NAME}
+Type: {ACCOUNT_TYPE}
+Description: {ACCOUNT_DESCRIPTION}
+
+Vous pouvez consulter ce compte à l'URL suivante:
+{URL}
+<!-- END: Account -->
+
+
+<!-- BEGIN: Case_Subject -->
+Réclamation [1CRM] - {CASE_SUBJECT}
+<!-- END: Case_Subject -->
+<!-- BEGIN: Case -->
+{ASSIGNER} a assigné une réclamation à {ASSIGNED_USER}.
+
+Objet: {CASE_SUBJECT}
+Priorité: {CASE_PRIORITY}
+Etat: {CASE_STATUS}
+Description: {CASE_DESCRIPTION}
+
+Vous pouvez consulter cette réclamation à l'URL suivante:
+{URL}
+<!-- END: Case -->
+
+<!--longreach - start added-->
+<!-- BEGIN: CaseUpdate_Subject -->
+Réclamation [1CRM] - {CASE_SUBJECT}
+<!-- END: CaseUpdate_Subject -->
+<!-- BEGIN: CaseUpdate -->
+{ASSIGNER} a modifié une réclamation.
+
+Objet: {CASE_SUBJECT}
+Priorité: {CASE_PRIORITY}
+Etat: {CASE_STATUS}
+Description: {CASE_DESCRIPTION}
+
+Vous pouvez consulter cette réclamation à l'URL suivante:
+{URL}
+<!-- END: CaseUpdate -->
+<!--longreach - end added-->
+
+
+<!-- BEGIN: Task_Subject -->
+Tâche [1CRM] - {TASK_SUBJECT}
+<!-- END: Task_Subject -->
+<!-- BEGIN: Task -->
+{ASSIGNER} a assigné une tâche à {ASSIGNED_USER}.
+
+Objet: {TASK_SUBJECT}
+Priorité: {TASK_PRIORITY}
+Date d'échéance: {TASK_DUEDATE}
+Etat: {TASK_STATUS}
+Description: {TASK_DESCRIPTION}
+
+Vous pouvez consulter cette tâche à l'URL suivante:
+{URL}
+<!-- END: Task -->
+
+
+<!-- BEGIN: Meeting_Subject -->
+Invitation à un RDV [1CRM] - {MEETING_SUBJECT}
+<!-- END: Meeting_Subject -->
+<!-- BEGIN: Meeting -->
+Pour: {MEETING_TO},
+
+{ASSIGNER} vous a invité à un rendez-vous
+
+Objet: {MEETING_SUBJECT}
+Etat: {MEETING_STATUS}
+Date de début: {MEETING_STARTDATE}
+Durée: {MEETING_HOURS}h, {MEETING_MINUTES}m
+Lieu: {MEETING_LOCATION}
+Description: {MEETING_DESCRIPTION}
+<!-- BEGIN: include_dimdim -->
+URL de la conférence web: {MEETING_DIMDIMDESCRIPTION}
+<!-- BEGIN: explanation -->
+Veuillez noter qu'il vous sera impossible de vous connecter à la conférence web DimDim tant que le présentateur n'a pas démarré la conférence.
+
+<!-- END: explanation -->
+<!-- END: include_dimdim -->
+
+Accepter l'invitation pour ce rendez-vous:
+{ACCEPT_URL}&accept_status=accept
+
+Accepter l'invitation pour ce rendez-vous mais sous réserve:
+{ACCEPT_URL}&accept_status=tentative
+
+Décliner l'invitation pour ce rendez-vous:
+{ACCEPT_URL}&accept_status=decline
+
+<!-- END: Meeting -->
+
+
+<!-- BEGIN: Email_Subject -->
+Email [1CRM] - {EMAIL_SUBJECT}
+<!-- END: Email_Subject -->
+<!-- BEGIN: Email -->
+{ASSIGNER} a assigné un Email à {ASSIGNED_USER}.
+
+Objet: {EMAIL_SUBJECT}
+Date d'envoi: {EMAIL_DATESENT}
+
+Vous pouvez consulter cet email à l'adresse suivante:
+{URL}
+<!-- END: Email -->
+
+
+
+
+
+
+<!-- BEGIN: Contact_Subject -->
+Contact [1CRM] - {CONTACT_NAME}
+<!-- END: Contact_Subject -->
+<!-- BEGIN: Contact -->
+{ASSIGNER} a assigné un Contact à {ASSIGNED_USER}.
+
+Nom du contact: {CONTACT_NAME}
+Description: {CONTACT_DESCRIPTION}
+
+Vous pouvez consulter ce contact à l'adresse suivante:
+{URL}
+<!-- END: Contact -->
+
+
+<!-- BEGIN: Lead_Subject -->
+Piste [1CRM] - {LEAD_NAME}
+<!-- END: Lead_Subject -->
+<!-- BEGIN: Lead -->
+{ASSIGNER} a assigné une Piste à {ASSIGNED_USER}.
+
+Nom de la Piste: {LEAD_NAME}
+Provenance: {LEAD_SOURCE}
+Etat: {LEAD_STATUS}
+Description: {LEAD_DESCRIPTION}
+
+Vous pouvez consulter cette Piste à l'adresse suivante:
+{URL}
+<!-- END: Lead -->
+
+
+<!-- BEGIN: Opportunity_Subject -->
+Affaire [1CRM] - {OPPORTUNITY_NAME}
+<!-- END: Opportunity_Subject -->
+<!-- BEGIN: Opportunity -->
+{ASSIGNER} a assigné une affaire à {ASSIGNED_USER}.
+
+Nom de l'affaire: {OPPORTUNITY_NAME}
+Montant: {OPPORTUNITY_AMOUNT}
+Date de Clôture: {OPPORTUNITY_CLOSEDATE}
+Phase de vente: {OPPORTUNITY_STAGE}
+Description: {OPPORTUNITY_DESCRIPTION}
+
+Vous pouvez consulter cette Affaire à l'adresse suivante:
+{URL}
+<!-- END: Opportunity -->
+
+
+<!-- BEGIN: Bug_Subject -->
+Bug [1CRM] - {BUG_SUBJECT}
+<!-- END: Bug_Subject -->
+<!-- BEGIN: Bug -->
+{ASSIGNER} a assigné un bug à {ASSIGNED_USER}.
+
+Numéro de bug: {BUG_BUG_NUMBER}
+Objet: {BUG_SUBJECT}
+Type: {BUG_TYPE}
+Priorité: {BUG_PRIORITY}
+Etat: {BUG_STATUS}
+Résolution: {BUG_RESOLUTION}
+Trouvé dans la version: {BUG_RELEASE}
+Description: {BUG_DESCRIPTION}
+Journal des travaux: {BUG_WORK_LOG}
+
+Vous pouvez consulter ce Bug à l'adresse suivante:
+{URL}
+<!-- END: Bug -->
+
+
+<!-- BEGIN: Default_Subject -->
+[1CRM] - {OBJECT} assigné(e)
+<!-- END: Default_Subject -->
+<!-- BEGIN: Default -->
+{ASSIGNER} a assigné un(e) {OBJECT} à {ASSIGNED_USER}.
+
+Vous pouvez consulter cet(te) {OBJECT} à l'adresse suivante:
+{URL}
+<!-- END: Default -->
+
+<!-- BEGIN: Call_Subject -->
+[1CRM] Invitation à une conférence téléphonique - {CALL_SUBJECT}
+<!-- END: Call_Subject -->
+<!-- BEGIN: Call -->
+Pour: {CALL_TO},
+
+{ASSIGNER} vous a invité à une conférence téléphonique
+
+Objet: {CALL_SUBJECT}
+Etat: {CALL_STATUS}
+Date de début: {CALL_STARTDATE}
+Durée: {CALL_HOURS}h, {CALL_MINUTES}m
+Description: {CALL_DESCRIPTION}
+
+Accepter cette conférence téléphonique:
+{ACCEPT_URL}&accept_status=accept
+
+Accepter cette conférence téléphonique sous réserve
+{ACCEPT_URL}&accept_status=tentative
+
+Décliner l'invitation pour cette conférence téléphonique
+{ACCEPT_URL}&accept_status=decline
+
+<!-- END: Call -->
+
+<!-- BEGIN: Campaign_Subject -->
+Campagne [1CRM] - {CAMPAIGN_NAME}
+<!-- END: Campaign_Subject -->
+<!-- BEGIN: Campaign -->
+{ASSIGNER} a assigné une campagne à {ASSIGNED_USER}.
+
+Objet: {CAMPAIGN_NAME}
+Montant: {CAMPAIGN_AMOUNT}
+Date de fin: {CAMPAIGN_CLOSEDATE}
+Etat: {CAMPAIGN_STATUS}
+Description: {CAMPAIGN_DESCRIPTION}
+
+Vous pouvez consulter cette campagne à l'adresse suivante:
+{URL}
+<!-- END: Campaign -->
+
+<!-- BEGIN: Quota_Subject -->
+Quotas 1CRM - Votre quota pour {QUOTA_TIMEPERIOD}
+<!-- END: Quota_Subject -->
+<!-- BEGIN: Quota -->
+{ASSIGNER} a assigné un quota à {ASSIGNED_USER}.
+
+Montant: {QUOTA_AMOUNT}
+Période de temps: {QUOTA_TIMEPERIOD}
+
+Vous pouvez consulter ce quota à l'adresse suivante: 
+{QUOTA_URL}
+<!-- END: Quota -->
+
+<!--longreach - added-->
+<!-- BEGIN: AcceptDecline -->
+<html>
+<head>
+<title>{APP.LBL_BROWSER_TITLE}</title>
+<style type="text/css">@import url("themes/{THEME}/style.css"); </style>
+<meta http-equiv="Content-Type" content="text/html; charset={CHARSET}" />
+</head>
+<body>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+    <td colspan="3" style="background-image : url(themes/{THEME}/images/header_bg.gif);">
+	<table cellspacing="0" cellpadding="0" border="0" width="100%">
+	<tr height="50">
+		<td class="topBar">
+			<a href="{COMPANY_URL}">
+			{COMPANY_IMAGE}
+			</a>
+		</td>
+		<td align="right" nowrap class="myArea" style="padding-right: 10px;">
+			<a href="http://infoathand.com">
+			{IAH_IMAGE}
+			</a>
+		</td>
+	</tr>
+	</table>
+  </td>
+</tr><tr height="11">
+	<td colspan="3" style="padding-left: 10px;"></td>
+</tr><tr>
+<td style="padding: 10px; vertical-align: top; width: 100%;">
+	<table cellpadding="0" cellspacing="0" border="0" width="100%" class="tabForm">
+	<tr><td>
+		<table width="100%" border="0" cellspacing="0" cellpadding="5" cellpadding="0">
+		<tr>
+			<td>
+				<h3>{APP.LBL_STATUS_UPDATED}</h3>
+				<h4>{APP.LBL_STATUS} {ACCEPT_STATUS}</h4>
+			</td>
+		</tr>
+		</table>
+	</td></tr>
+	</table>
+</td>
+</tr>
+</table>
+</body></html>
+<!-- END: AcceptDecline -->
+
+
+<!-- BEGIN: Report_Notify_Subject -->
+Rapport Planifié [1CRM] - {REPORT_NAME} ({REPORT_DATE})
+<!-- END: Report_Notify_Subject -->
+<!-- BEGIN: Report_Notify -->
+Vous pouvez consulter ce rapport à l'adresse suivante:
+{URL}
+<!-- END: Report_Notify -->
+
+
+<!-- BEGIN: Meeting_Notify_Subject -->
+Réunion Planifiée[1CRM] - {NAME} ({DATE})
+<!-- END: Meeting_Notify_Subject -->
+<!-- BEGIN: Meeting_Notify -->
+Objet: {NAME}
+Date: {DATE}
+Durée: {DURATION}
+Lieu: {LOCATION}
+Participants: {INVITEES}
+Resources: {RESOURCES}
+<!-- END: Meeting_Notify -->
+
+
+<!-- BEGIN: Call_Notify_Subject -->
+Appel Planifié [1CRM] - {NAME} ({DATE})
+<!-- END: Call_Notify_Subject -->
+<!-- BEGIN: Call_Notify -->
+Objet: {NAME}
+Date: {DATE}
+Durée: {DURATION}
+Participants: {INVITEES}
+<!-- END: Call_Notify -->
+
+<!--longreach - start added-->
+<!-- BEGIN: ProjectTask_Subject -->
+Tâche Projet [1CRM] - {TASK_SUBJECT}
+<!-- END: ProjectTask_Subject -->
+<!-- BEGIN: ProjectTask -->
+Projet: {TASK_PROJECTNAME}
+Objet: {TASK_SUBJECT}
+Etat: {TASK_STATUS}
+Priorité: {TASK_PRIORITY}
+Date de début: {TASK_STARTDATE}
+Date d’échéance: {TASK_DUEDATE}
+Description: {TASK_DESCRIPTION}
+
+Vous pouvez consulter cette Tâche Projet à l'adresse suivante:
+{URL}
+<!-- END: ProjectTask -->
+
+<!-- BEGIN: PortalLeadConversion_Subject -->
+Une Piste [1CRM] a été convertie en contact et en compte par l'eStore
+<!-- END: PortalLeadConversion_Subject -->
+<!-- BEGIN: PortalLeadConversion -->
+La Piste {LEAD_NAME} a passé une commande via l'eStore 1CRM. Cette Piste a été automatiquement convertie en un contact ({CONTACT_NAME}) et en un compte associé ({ACCOUNT_NAME}).
+
+Piste: {LEAD_URL}
+Contact: {CONTACT_URL}
+Compte: {ACCOUNT_URL}
+
+<!-- END: PortalLeadConversion -->
+
+<!-- BEGIN: Thread_Subject -->
+Réponse dans un Forum [1CRM] - {THREAD_SUBJECT}
+<!-- END: Thread_Subject -->
+<!-- BEGIN: Thread -->
+Discussion: {THREAD_SUBJECT}
+
+Réponse publiée par: {REPLIED_BY}
+Sujet de la réponse: {REPLY_SUBJECT}
+
+
+Vous pouvez consulter cette discussion du Forum à l'adresse suivante:
+{URL}
+<!-- END: Thread -->
+
+<!-- BEGIN: MonthlyServiceInvoice_Subject -->
+Facture [1CRM]: {SERVICE_SUBJECT}
+<!-- END: MonthlyServiceInvoice_Subject -->
+<!-- BEGIN: MonthlyServiceInvoice -->
+Vous trouverez en pièce jointe la dernière facture de votre abonnement pour votre {BOOKING_CATEGORY_NAME}.
+
+<!-- END: MonthlyServiceInvoice -->
+
+<!-- BEGIN: MonthlyServiceExpiryRemainder_Subject -->
+Votre abonnement [1CRM] pour votre {BOOKING_CATEGORY_NAME} est arrivé à expiration.
+<!-- END: MonthlyServiceExpiryRemainder_Subject -->
+<!-- BEGIN: MonthlyServiceExpiryRemainder -->
+Par cet email, nous vous rappelons que votre abonnement pour votre {BOOKING_CATEGORY_NAME} est arrivé à expiration et doit être renouvelé. 
+Merci de nous contacter afin de renouveler votre abonnement.
+
+<!-- END: MonthlyServiceExpiryRemainder -->
+
+<!--longreach - end added-->
+

@@ -1,0 +1,438 @@
+<!--
+/*********************************************************************************
+ * The contents of this file are subject to the SugarCRM Public License Version
+ * 1.1.3 ("License"); You may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.sugarcrm.com/SPL
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied.  See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * All copies of the Covered Code must include on each user interface screen:
+ *    (i) the "Powered by SugarCRM" logo and
+ *    (ii) the SugarCRM copyright notice
+ * in the same form as they appear in the distribution.  See full license for
+ * requirements.
+ *
+ * The Original Code is: SugarCRM Open Source
+ * The Initial Developer of the Original Code is SugarCRM, Inc.
+ * Portions created by SugarCRM are Copyright (C) 2004-2006 SugarCRM, Inc.;
+ * All Rights Reserved.
+ * Contributor(s): Deutsche Uebersetzung by Markus Mueller @ TASC.CH .
+ ********************************************************************************/
+/*********************************************************************************
+
+ ********************************************************************************/
+-->
+
+<!-- BEGIN: Quote_Subject -->
+Angebot [1CRM] - {QUOTE_SUBJECT}
+<!-- END: Quote_Subject -->
+<!-- BEGIN: Quote -->
+{ASSIGNER} hat ein Angebot {ASSIGNED_USER} zugeordnet.
+
+Betreff: {QUOTE_SUBJECT}
+Status: {QUOTE_STATUS}
+Angebotsende: {QUOTE_CLOSEDATE}
+Beschreibung: {QUOTE_DESCRIPTION}
+
+Sie können das Angebot unter folgendem Link einsehen:
+{URL}
+<!-- END: Quote -->
+
+
+<!-- BEGIN: Account_Subject -->
+Konto [1CRM] - {ACCOUNT_NAME}
+<!-- END: Account_Subject -->
+<!-- BEGIN: Account -->
+{ASSIGNER} hat ein Angebot {ASSIGNED_USER} zugeordnet.
+
+Kundenkonto Name: {ACCOUNT_NAME}
+Typ: {ACCOUNT_TYPE}
+Beschreibung: {ACCOUNT_DESCRIPTION}
+
+Sie können dieses Konto unter der folgenden URL ansehen:
+{URL}
+<!-- END: Account -->
+
+
+<!-- BEGIN: Case_Subject -->
+Reklamation[1CRM] - {CASE_SUBJECT}
+<!-- END: Case_Subject -->
+<!-- BEGIN: Case -->
+{ASSIGNER} hat eine Beschwerde zu {ASSIGNED_USER} zugeordnet.
+
+Betreff: {CASE_SUBJECT}
+Dringlichkeit: {CASE_PRIORITY}
+Status: {CASE_STATUS}
+Beschreibung: {CASE_DESCRIPTION}
+
+Sie können diese Reklamation unter der folgenden URL ansehen:
+{URL}
+<!-- END: Case -->
+
+<!--longreach - start added-->
+<!-- BEGIN: CaseUpdate_Subject -->
+Reklamation [1CRM] - {CASE_SUBJECT}
+<!-- END: CaseUpdate_Subject -->
+<!-- BEGIN: CaseUpdate -->
+{ASSIGNER} hat eine Reklamation bearbeitet.
+
+Betreff: {CASE_SUBJECT}
+Dringlichkeit: {CASE_PRIORITY}
+Status: {CASE_STATUS}
+Beschreibung: {CASE_DESCRIPTION}
+
+Sie können diese Reklamation unter der folgenden URL ansehen:
+{URL}
+<!-- END: CaseUpdate -->
+<!--longreach - end added-->
+
+
+<!-- BEGIN: Task_Subject -->
+Aufgabe[1CRM] - {TASK_SUBJECT}
+<!-- END: Task_Subject -->
+<!-- BEGIN: Task -->
+{ASSIGNER} hat eine Aufgabe zu {ASSIGNED_USER} zugeordnet.
+
+Betreff: {TASK_SUBJECT}
+Dringlichkeit: {TASK_PRIORITY}
+Zu Erledigen bis: {TASK_DUEDATE}
+Status: {TASK_STATUS}
+Beschreibung: {TASK_DESCRIPTION}
+
+Sie können diese Aufgabe unter der folgenden URL ansehen:
+{URL}
+<!-- END: Task -->
+
+
+<!-- BEGIN: Meeting_Subject -->
+Einladung zu einer Besprechung [1CRM] - {MEETING_SUBJECT}
+<!-- END: Meeting_Subject -->
+<!-- BEGIN: Meeting -->
+Für: {MEETING_TO},
+
+{ASSIGNER} sie sind zu einer Besprechung/Konferenz/Meeting eingeladen
+
+Betreff: {MEETING_SUBJECT}
+Status: {MEETING_STATUS}
+Begin: {MEETING_STARTDATE}
+Dauer: {MEETING_HOURS}h, {MEETING_MINUTES}m
+Ort: {MEETING_LOCATION}
+Beschreibung: {MEETING_DESCRIPTION}
+<!-- BEGIN: include_dimdim -->
+Link URL für die WWW (DIMDIM) Konferenz:  {MEETING_DIMDIMDESCRIPTION}
+<!-- BEGIN: explanation -->
+Bitte beachten Sie , dass Sie nur dann die DimDim Web-Konferenz selbstständig zu starten können,  wenn Sie auch der Moderator der Konferenz sind.
+
+
+<!-- END: explanation -->
+<!-- END: include_dimdim -->
+
+Einladung zum Meeting annehmen:
+{ACCEPT_URL}&accept_status=accept
+
+Einladung zum Meeting mit Vorbehalt der Änderung annehmen:
+{ACCEPT_URL}&accept_status=tentative
+
+Einladung zum Meeting ablehnen:
+{ACCEPT_URL}&accept_status=decline
+
+<!-- END: Meeting -->
+
+
+<!-- BEGIN: Email_Subject -->
+Email [1CRM] - {EMAIL_SUBJECT}
+<!-- END: Email_Subject -->
+<!-- BEGIN: Email -->
+{ASSIGNER} hat ein Email an{ASSIGNED_USER} gesendet.
+
+Betreff: {EMAIL_SUBJECT}
+Gesendet am: {EMAIL_DATESENT}
+
+Sie können diese Email unter folgendem Link einsehen:
+{URL}
+<!-- END: Email -->
+
+
+
+
+
+
+<!-- BEGIN: Contact_Subject -->
+Kontakt  [1CRM] - {CONTACT_NAME}
+<!-- END: Contact_Subject -->
+<!-- BEGIN: Contact -->
+{ASSIGNER} hat einen neuen Ansprechpartner Kontakt zu {ASSIGNED_USER} zugeordnet.
+
+Name: {CONTACT_NAME}
+Beschreibung: {CONTACT_DESCRIPTION}
+
+Sie können den Ansprechpartner unter folgendem Link aufrufen:
+{URL}
+<!-- END: Contact -->
+
+
+<!-- BEGIN: Lead_Subject -->
+Interessent [1CRM] - {LEAD_NAME}
+<!-- END: Lead_Subject -->
+<!-- BEGIN: Lead -->
+{ASSIGNER} a assigné une Piste à {ASSIGNED_USER}.
+
+Name des Interessenten: {LEAD_NAME}
+Herkunft des Interessenten: {LEAD_SOURCE}
+Status: {LEAD_STATUS}
+Beschreibung: {LEAD_DESCRIPTION}
+
+Sie können den Interessent unter folgendem Link aufrufen:
+{URL}
+<!-- END: Lead -->
+
+
+<!-- BEGIN: Opportunity_Subject -->
+Chance [1CRM] - {OPPORTUNITY_NAME}
+<!-- END: Opportunity_Subject -->
+<!-- BEGIN: Opportunity -->
+{ASSIGNER} hat eine Chance zu {ASSIGNED_USER} zugeordnet.
+
+Name der CHANCE: {OPPORTUNITY_NAME}
+erw. Umsatz: {OPPORTUNITY_AMOUNT}
+Abschluss bis: {OPPORTUNITY_CLOSEDATE}
+Verkaufsphase: {OPPORTUNITY_STAGE}
+Beschreibung: {OPPORTUNITY_DESCRIPTION}
+
+Sie können die Daten dieser Chance unter folgendem Link aufrufen:
+{URL}
+<!-- END: Opportunity -->
+
+
+<!-- BEGIN: Bug_Subject -->
+Fehler [1CRM] - {BUG_SUBJECT}
+<!-- END: Bug_Subject -->
+<!-- BEGIN: Bug -->
+{ASSIGNER} hat einen Fehler zu {ASSIGNED_USER} zugeordnet.
+
+Fehlernummer: {BUG_BUG_NUMBER}
+Betreff: {BUG_SUBJECT}
+Typ: {BUG_TYPE}
+Dringlichkeit: {BUG_PRIORITY}
+Status: {BUG_STATUS}
+Lösung: {BUG_RESOLUTION}
+Gefunden in der Version: {BUG_RELEASE}
+Beschreibung: {BUG_DESCRIPTION}
+Arbeitsbericht: {BUG_WORK_LOG}
+
+Sie können die Daten dieses Fehlers unter folgendem Link aufrufen:
+{URL}
+<!-- END: Bug -->
+
+
+<!-- BEGIN: Default_Subject -->
+[1CRM] - {OBJECT} zugeordnet
+<!-- END: Default_Subject -->
+<!-- BEGIN: Default -->
+{ASSIGNER} hat ein {OBJECT} zu {ASSIGNED_USER} zugeordnet.
+
+Sie können die Daten diese(s)r {OBJECT} unter folgendem Link aufrufen:
+{URL}
+<!-- END: Default -->
+
+<!-- BEGIN: Call_Subject -->
+[1CRM] Einladung zu einer Telefonkonferenz - {CALL_SUBJECT}
+<!-- END: Call_Subject -->
+<!-- BEGIN: Call -->
+Für: {CALL_TO},
+
+{ASSIGNER} hat Sie zu einer Telefonkonferenz eingeladen.
+
+Betreff: {CALL_SUBJECT}
+Status: {CALL_STATUS}
+Begin: {CALL_STARTDATE}
+Dauer: {CALL_HOURS}h, {CALL_MINUTES}m
+Beschreibung: {CALL_DESCRIPTION}
+
+Einladung zur Telefonkonferenz annehmen:
+{ACCEPT_URL}&accept_status=accept
+
+Einladung zur Telefonkonferenz mit Vorbehalt annehmen
+{ACCEPT_URL}&accept_status=tentative
+
+Einladung zur Telefonkonferenz ablehnen
+{ACCEPT_URL}&accept_status=decline
+
+<!-- END: Call -->
+
+<!-- BEGIN: Campaign_Subject -->
+Kampagne [1CRM] - {CAMPAIGN_NAME}
+<!-- END: Campaign_Subject -->
+<!-- BEGIN: Campaign -->
+{ASSIGNER} hat eine Kampagne zu {ASSIGNED_USER} zugeordnet.
+
+Betreff: {CAMPAIGN_NAME}
+erw. Umsatz: {CAMPAIGN_AMOUNT}
+Abschluss bis: {CAMPAIGN_CLOSEDATE}
+Status: {CAMPAIGN_STATUS}
+Beschreibung: {CAMPAIGN_DESCRIPTION}
+
+Sie können die Daten zu der Kampagne unter folgendem Link aufrufen.
+{URL}
+<!-- END: Campaign -->
+
+<!-- BEGIN: Quota_Subject -->
+Ihre Prognose für den Zeitraum {QUOTA_TIMEPERIOD}
+<!-- END: Quota_Subject -->
+<!-- BEGIN: Quota -->
+{ASSIGNER} hat eine Prognose zu {ASSIGNED_USER} zugeordnet.
+
+erw. Umsatz: {QUOTA_AMOUNT}
+Zeitraum: {QUOTA_TIMEPERIOD}
+
+Sie können die Prognose unter folgendem Link einsehen: 
+{QUOTA_URL}
+<!-- END: Quota -->
+
+<!--longreach - added-->
+<!-- BEGIN: AcceptDecline -->
+<html>
+<head>
+<title>{APP.LBL_BROWSER_TITLE}</title>
+<style type="text/css">@import url("themes/{THEME}/style.css"); </style>
+<meta http-equiv="Content-Type" content="text/html; charset={CHARSET}" />
+</head>
+<body>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+    <td colspan="3" style="background-image : url(themes/{THEME}/images/header_bg.gif);">
+	<table cellspacing="0" cellpadding="0" border="0" width="100%">
+	<tr height="50">
+		<td class="topBar">
+			<a href="{COMPANY_URL}">
+			{COMPANY_IMAGE}
+			</a>
+		</td>
+		<td align="right" nowrap class="myArea" style="padding-right: 10px;">
+			<a href="http://infoathand.com">
+			{IAH_IMAGE}
+			</a>
+		</td>
+	</tr>
+	</table>
+  </td>
+</tr><tr height="11">
+	<td colspan="3" style="padding-left: 10px;"></td>
+</tr><tr>
+<td style="padding: 10px; vertical-align: top; width: 100%;">
+	<table cellpadding="0" cellspacing="0" border="0" width="100%" class="tabForm">
+	<tr><td>
+		<table width="100%" border="0" cellspacing="0" cellpadding="5" cellpadding="0">
+		<tr>
+			<td>
+				<h3>{APP.LBL_STATUS_UPDATED}</h3>
+				<h4>{APP.LBL_STATUS} {ACCEPT_STATUS}</h4>
+			</td>
+		</tr>
+		</table>
+	</td></tr>
+	</table>
+</td>
+</tr>
+</table>
+</body></html>
+<!-- END: AcceptDecline -->
+
+
+<!-- BEGIN: Report_Notify_Subject -->
+Geplanter Bericht [1CRM] - {REPORT_NAME} ({REPORT_DATE})
+<!-- END: Report_Notify_Subject -->
+<!-- BEGIN: Report_Notify -->
+Sie können den Bericht unter folgendem Link einsehen:
+{URL}
+<!-- END: Report_Notify -->
+
+
+<!-- BEGIN: Meeting_Notify_Subject -->
+Geplante Besprechung [1CRM] - {NAME} ({DATE})
+<!-- END: Meeting_Notify_Subject -->
+<!-- BEGIN: Meeting_Notify -->
+Betreff: {NAME}
+Datum: {DATE}
+Dauer: {DURATION}
+Ort: {LOCATION}
+Teilnehmer: {INVITEES}
+Ressourcen: {RESOURCES}
+<!-- END: Meeting_Notify -->
+
+
+<!-- BEGIN: Call_Notify_Subject -->
+Geplantes Telefonat [1CRM] - {NAME} ({DATE})
+<!-- END: Call_Notify_Subject -->
+<!-- BEGIN: Call_Notify -->
+Betreff: {NAME}
+Datum: {DATE}
+Dauer: {DURATION}
+Teilnehmer: {INVITEES}
+<!-- END: Call_Notify -->
+
+<!--longreach - start added-->
+<!-- BEGIN: ProjectTask_Subject -->
+Projektaufgabe [1CRM] - {TASK_SUBJECT}
+<!-- END: ProjectTask_Subject -->
+<!-- BEGIN: ProjectTask -->
+Projekt: {TASK_PROJECTNAME}
+Betreff: {TASK_SUBJECT}
+Status: {TASK_STATUS}
+Dringlichkeit: {TASK_PRIORITY}
+Anfangsdatum: {TASK_STARTDATE}
+Abschlussdatum: {TASK_DUEDATE}
+Beschreibung: {TASK_DESCRIPTION}
+
+Sie können die Projektaufgabe unter folgendem Link einsehen:
+{URL}
+<!-- END: ProjectTask -->
+
+<!-- BEGIN: PortalLeadConversion_Subject -->
+Ein Interessent [1CRM] hat im Onlineshop bestellt.
+<!-- END: PortalLeadConversion_Subject -->
+<!-- BEGIN: PortalLeadConversion -->
+Der Interessent {LEAD_NAME} hat einen Auftrag im Onlineshop erteilt. Dieser Interessent wurde automtisch in einen Kontakt ({CONTACT_NAME}) und in die Firma ({ACCOUNT_NAME}) umgewandet.
+
+Interessent: {LEAD_URL}
+Kontakt: {CONTACT_URL}
+Firma: {ACCOUNT_URL}
+
+<!-- END: PortalLeadConversion -->
+
+<!-- BEGIN: Thread_Subject -->
+Antwort im Forum zum Thema - {THREAD_SUBJECT} erhalten.
+<!-- END: Thread_Subject -->
+<!-- BEGIN: Thread -->
+Diskussion: {THREAD_SUBJECT}
+
+Beantwortet von: {REPLIED_BY}
+Betreff: {REPLY_SUBJECT}
+
+
+Sie können den Inhalt der Forumsnachricht unter folgendem Link einsehen:
+{URL}
+<!-- END: Thread -->
+
+<!-- BEGIN: MonthlyServiceInvoice_Subject -->
+Rechnung [1CRM]: {SERVICE_SUBJECT}
+<!-- END: MonthlyServiceInvoice_Subject -->
+<!-- BEGIN: MonthlyServiceInvoice -->
+Im Anhang finden Sie die Sammelrechnung für die laufenden Buchungen Ihrer Bestellungen ({BOOKING_CATEGORY_NAME} ).
+
+<!-- END: MonthlyServiceInvoice -->
+
+<!-- BEGIN: MonthlyServiceExpiryRemainder_Subject -->
+Ihre laufenden Besetellung {BOOKING_CATEGORY_NAME} wurde(n) fristgerecht ausgeliefert.
+<!-- END: MonthlyServiceExpiryRemainder_Subject -->
+<!-- BEGIN: MonthlyServiceExpiryRemainder -->
+Mit dieser E-Mail, wir erinnern Sie daran, dass Ihr Bestellabonnement {BOOKING_CATEGORY_NAME} abgelaufen ist und erneuert werden muss.
+Um das Abonnement zu verlängern nehmen Sie bitte Kontakt mit uns auf.
+
+
+<!-- END: MonthlyServiceExpiryRemainder -->
+
+<!--longreach - end added-->
+
