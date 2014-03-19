@@ -1,0 +1,33 @@
+<?php return; /* no output */ ?>
+
+LBL_ACCESS_LIMITED: Limité
+LBL_ROLE: Rôle
+LBL_ACCESS_ALL: Tous
+LBL_ACCESS_NONE: Aucun
+LBL_ACCESS_ROLE: Rôle
+LBL_ACCESS_OWNER: Propriétaire
+LBL_ACCESS_NORMAL: Normal
+LBL_ACCESS_ADMIN: Admin
+LBL_ACCESS_ENABLED: Activé
+LBL_ACCESS_DISABLED: Désactivé
+LBL_ACCESS_GROUP: Equipe
+LBL_NAME: Nom
+LBL_DESCRIPTION: Description
+LIST_ROLES: Liste des rôles
+LBL_USERS_SUBPANEL_TITLE: Utilisateurs
+LIST_ROLES_BY_USER: Liste des rôles par utilisateur
+LBL_ROLES_SUBPANEL_TITLE: Rôles des utilisateurs
+LBL_SEARCH_FORM_TITLE: Rechercher
+LBL_ACTION_VIEW: Vue détaillée
+LBL_ACTION_EDIT: Vue d'édition
+LBL_ACTION_DELETE: Supprimer
+LBL_ACTION_IMPORT: Importer
+LBL_ACTION_EXPORT: Exporter
+LBL_ACTION_REPORT: Rapports
+LBL_ACTION_APPROVE: Approuver
+LBL_CATEGORY: Catégorie
+LBL_TYPE: Type
+LBL_ACCESS: Accès
+LBL_ACTION_LIST: Listes
+LBL_ACTION_ACCESS: Accès
+LBL_ACTION_ADMIN: Type d'utilisateur
