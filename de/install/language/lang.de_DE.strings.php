@@ -114,23 +114,23 @@ LBL_CHECKSYS_1:
 	Damit Ihre 1CRM Installation richtig funktioniert, prüfen sie bitte ob alle der unten durchgeführten Tests ok sind und auf Grün stehen. Sollten Tests auf Rot stehen passen Sie bitte Ihre Server Konfiguration an oder unternehmen weitere Schritte zur Richtigen Einstellung.
 LBL_CHECKSYS_CACHE: Cachdirectories sind Beschreibbar
 LBL_CHECKSYS_CALL_TIME: PHP Allow Call Time Pass Reference Turned Off
-LBL_CHECKSYS_COMPONENT: Component
-LBL_CHECKSYS_COMPONENT_OPTIONAL: Optional Components
-LBL_CHECKSYS_CONFIG: "Writable 1CRM Configuration File "
-LBL_CHECKSYS_CURL: cURL Module
-LBL_CHECKSYS_CUSTOM: Writable Custom Directory
-LBL_CHECKSYS_DATA: Writable Data Sub-Directories
-LBL_CHECKSYS_IMAP: IMAP Module
+LBL_CHECKSYS_COMPONENT: Komponente
+LBL_CHECKSYS_COMPONENT_OPTIONAL: Optionale Komponente
+LBL_CHECKSYS_CONFIG: "Das 1CRM Konfigurationsfile ist schreibbar "
+LBL_CHECKSYS_CURL: cURL Modul
+LBL_CHECKSYS_CUSTOM: Das "Custom Directory" ist schreibbar
+LBL_CHECKSYS_DATA: Die Unterverzeichnisse sind beschreibbar
+LBL_CHECKSYS_IMAP: IMAP Modul
 LBL_CHECKSYS_MQGPC: Magic Quotes GPC
-LBL_CHECKSYS_MBSTRING: Multibyte String Support
-LBL_CHECKSYS_MEM_OK: OK (No Limit)
-LBL_CHECKSYS_MEM_UNLIMITED: OK (Unlimited)
+LBL_CHECKSYS_MBSTRING: UTF-8 Multibyte String ist möglich
+LBL_CHECKSYS_MEM_OK: OK (Keine Beschränkung)
+LBL_CHECKSYS_MEM_UNLIMITED: OK (Keine Beschränkung)
 LBL_CHECKSYS_MEM: "PHP Memory Limit >= "
-LBL_CHECKSYS_MODULE: Writable Modules Sub-Directories and Files
+LBL_CHECKSYS_MODULE: Alle Module, Dateien und Unterverzeichnisse sind beschreibbar
 LBL_CHECKSYS_MYSQL_VERSION: MySQL Version
-LBL_CHECKSYS_NOT_AVAILABLE: Not Available
+LBL_CHECKSYS_NOT_AVAILABLE: Nicht Verfügbar
 LBL_CHECKSYS_OK: OK
-LBL_CHECKSYS_PHP_INI: <b>Note:</b> Your php configuration file (php.ini) is located at
+LBL_CHECKSYS_PHP_INI: <b>Notiz:</b> Ihre php Konfigurationsdatei (php.ini) befindet sich hier 
 LBL_CHECKSYS_PHP_JSON: PHP-JSON Module
 LBL_CHECKSYS_PHP_OK: "OK (ver "
 LBL_CHECKSYS_PHPVER: PHP Version
