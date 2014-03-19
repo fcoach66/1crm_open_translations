@@ -112,13 +112,13 @@ ERROR_VERSION_INCOMPATIBLE: Das hochgeladene File ist nicht mit dieser Version v
 LBL_BACK: Zurück
 LBL_CHECKSYS_1:
 	Damit Ihre 1CRM Installation richtig funktioniert, prüfen sie bitte ob alle der unten durchgeführten Tests ok sind und auf Grün stehen. Sollten Tests auf Rot stehen passen Sie bitte Ihre Server Konfiguration an oder unternehmen weitere Schritte zur Richtigen Einstellung.
-LBL_CHECKSYS_CACHE: Cachdirectories sind Beschreibbar
+LBL_CHECKSYS_CACHE: Cachdirectories sind beschreibbar
 LBL_CHECKSYS_CALL_TIME: PHP Allow Call Time Pass Reference Turned Off
 LBL_CHECKSYS_COMPONENT: Komponente
 LBL_CHECKSYS_COMPONENT_OPTIONAL: Optionale Komponente
-LBL_CHECKSYS_CONFIG: "Das 1CRM Konfigurationsfile ist schreibbar "
+LBL_CHECKSYS_CONFIG: "Das 1CRM Konfigurationsdatei ist beschreibbar "
 LBL_CHECKSYS_CURL: cURL Modul
-LBL_CHECKSYS_CUSTOM: Das "Custom Directory" ist schreibbar
+LBL_CHECKSYS_CUSTOM: Das "Custom Directory" ist beschreibbar
 LBL_CHECKSYS_DATA: Die Unterverzeichnisse sind beschreibbar
 LBL_CHECKSYS_IMAP: IMAP Modul
 LBL_CHECKSYS_MQGPC: Magic Quotes GPC
