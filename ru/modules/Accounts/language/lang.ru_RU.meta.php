@@ -2,4 +2,4 @@
 
 detail
 	label: Accounts
-	comment: en_us language file for Accounts module
+	comment: ru_ru language file for Accounts module
